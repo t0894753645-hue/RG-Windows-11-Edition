@@ -1,0 +1,4 @@
+RG Windows 11 Edition
+Desktop Environment: XFCE
+Theme: RG-Windows-11
+Layout: Windows 11 Style
