@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # Stage 20: XFCE desktop + LightDM autologin.
 set -euo pipefail
@@ -13,6 +14,7 @@ run() {
 run "
   apt-get install -y --no-install-recommends \
     xfce4 xfce4-goodies xfce4-battery-plugin xfce4-power-manager xfce4-power-manager-plugins \
+    firefox-esr \
     lightdm lightdm-gtk-greeter \
     xserver-xorg-video-fbdev xserver-xorg-input-evdev xserver-xorg-input-libinput \
     mpv pavucontrol thunar-volman gvfs-backends mtp-tools
@@ -31,3 +33,4 @@ autologin-user-timeout=0
 user-session=xfce
 EOF
 "
+
